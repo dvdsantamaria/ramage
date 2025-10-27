@@ -12302,13 +12302,54 @@ body:not(.open-menu)
 .ed-element.preset-image-comparison-default .image-comparison-container {
   overflow: hidden;
 }
+.ed-element.preset-image-comparison-default > .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+.ed-element.preset-image-comparison-default .image-comparison-container {
+  flex: 1 1 calc(50% - 1.5rem);
+  max-width: calc(50% - 1.5rem);
+  position: relative;
+  aspect-ratio: 16 / 9;
+  display: block;
+  min-height: 260px;
+}
+.ed-element.preset-image-comparison-default
+  .image-comparison-container
+  > .background,
+.ed-element.preset-image-comparison-default
+  .image-comparison-container
+  > .inner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 60.9375rem) {
+  .ed-element.preset-image-comparison-default > .inner {
+    gap: 1.5rem;
+    padding: 4rem 1.25rem;
+  }
+  .ed-element.preset-image-comparison-default .image-comparison-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+}
 .ed-element.preset-image-comparison-default
   .image-comparison-container
   .background {
   background-size: cover;
   font-size: 0;
   margin: 0;
-  height: 100vw;
+  height: 100%;
+  width: 100%;
 }
 .ed-element.preset-image-comparison-default
   .image-comparison-container
@@ -12339,6 +12380,8 @@ body:not(.open-menu)
   background-size: cover;
   font-size: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 .ed-element.preset-image-comparison-default .range-slider {
   position: absolute;
