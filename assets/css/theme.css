@@ -7088,7 +7088,7 @@ html#ecwid_html body#ecwid_body .horizontal-menu-container {
 }
 @media screen and (min-width: 61rem) {
   .ed-element.preset-menu-v2-hdecor .ed-menu ul {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     text-align: right;
   }
@@ -7142,7 +7142,7 @@ html#ecwid_html body#ecwid_body .horizontal-menu-container {
   }
 }
 .ed-element.preset-menu-v2-hdecor .ed-menu > ul > li > a:not(.button) {
-  padding: 0.55rem 0.25rem 0.55rem 0rem;
+  padding: 0.6rem 0.35rem 0.6rem 0rem;
   font-size: 1rem;
 }
 .ed-element.preset-menu-v2-hdecor .ed-menu > ul > li:hover > a:not(.button),
@@ -7151,7 +7151,7 @@ html#ecwid_html body#ecwid_body .horizontal-menu-container {
 }
 @media screen and (min-width: 36rem) and (max-width: 60.9375rem) {
   .ed-element.preset-menu-v2-hdecor .ed-menu > ul > li > a:not(.button) {
-    padding: 0.55rem 0.25rem 0.55rem 0rem;
+    padding: 0.6rem 0.35rem 0.6rem 0rem;
     font-size: 1rem;
   }
   .ed-element.preset-menu-v2-hdecor .ed-menu > ul > li:hover > a:not(.button),
@@ -7161,7 +7161,7 @@ html#ecwid_html body#ecwid_body .horizontal-menu-container {
 }
 @media screen and (min-width: 61rem) {
   .ed-element.preset-menu-v2-hdecor .ed-menu > ul > li > a:not(.button) {
-    padding: 0.55rem 0.25rem 0.55rem 0rem;
+    padding: 0.6rem 0.35rem 0.6rem 0rem;
     font-size: 1rem;
   }
   .ed-element.preset-menu-v2-hdecor .ed-menu > ul > li:hover > a:not(.button),
@@ -7177,44 +7177,6 @@ html#ecwid_html body#ecwid_body .horizontal-menu-container {
 }
 .ed-element.preset-menu-v2-hdecor .ed-menu > ul > li > a {
   font-size: 1rem;
-}
-
-@media screen and (min-width: 61rem) {
-  #ed-1064010910 > .inner {
-    display: flex;
-    align-items: center;
-    column-gap: 4rem;
-  }
-
-  #ed-1064010913 {
-    flex-shrink: 0;
-  }
-
-  #ed-1064010913 img {
-    max-height: 180px;
-    width: auto;
-  }
-
-  #ed-1064011321 {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  #ed-1064011321 .menu-level-0 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.45rem;
-  }
-
-  #ed-1064011321 .menu-level-0 > li:not(:last-child) {
-    margin-right: 0;
-  }
-
-  #ed-1064010922 {
-    margin-left: 3rem;
-  }
 }
 @media screen and (max-width: 60.9375rem) {
   .ed-element.preset-menu-v2-hdecor .ed-menu {
