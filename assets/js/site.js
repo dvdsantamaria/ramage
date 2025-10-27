@@ -277,15 +277,56 @@
 /*****popup*****/
 
 // Popup JS (without <script> tags if added to JS section)
-window.onload = function () {
-  setTimeout(function () {
-    document.getElementById("email-popup").style.display = "flex";
-  }, 5000); // 5 seconds delay
-};
+(function () {
+  var popupDelay = 5000;
+  var popupSessionKey = "emailPopupShown";
 
-function closePopup() {
-  document.getElementById("email-popup").style.display = "none";
-}
+  function setShownFlag() {
+    try {
+      sessionStorage.setItem(popupSessionKey, "true");
+    } catch (error) {
+      // Ignore storage errors (e.g. private browsing)
+    }
+  }
+
+  function hasShownFlag() {
+    try {
+      return sessionStorage.getItem(popupSessionKey) === "true";
+    } catch (error) {
+      return false;
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", function () {
+    var popup = document.getElementById("email-popup");
+    if (!popup) {
+      return;
+    }
+
+    var body = document.body;
+    var isHome = body && body.classList && body.classList.contains("index");
+    if (!isHome) {
+      return;
+    }
+
+    if (hasShownFlag()) {
+      return;
+    }
+
+    setTimeout(function () {
+      popup.style.display = "flex";
+      setShownFlag();
+    }, popupDelay);
+  });
+
+  window.closePopup = function () {
+    var popup = document.getElementById("email-popup");
+    if (popup) {
+      popup.style.display = "none";
+    }
+    setShownFlag();
+  };
+})();
 
 /*****popup-end*****/
 
