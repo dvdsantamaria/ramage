@@ -8470,6 +8470,10 @@ body.open-menu
   align-items: center;
   align-content: center;
 }
+.site-footer .ed-logo img {
+  max-width: 160px;
+  height: auto;
+}
 .ed-element.preset-footer-frigg-v2-hdecor .footer-frigg-content > .inner {
   margin: calc((0.25rem / 2) * -1);
   width: calc(100% + 0.25rem);

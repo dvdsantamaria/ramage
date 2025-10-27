@@ -2192,6 +2192,8 @@ figure {
 /* pages: about-us.html, contact.html, how-we-work.html, index.html, legal-notice.html, privacy.html, review.html, service-areas.html, services.html, strata-hub-blog.html */
 #ed-1064010958 img {
   width: 100%;
+  max-width: 60%;
+
 }
 
 /* pages: about-us.html, contact.html, how-we-work.html, index.html, legal-notice.html, privacy.html, review.html, service-areas.html, services.html, strata-hub-blog.html */
