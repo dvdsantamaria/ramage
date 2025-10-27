@@ -7251,6 +7251,67 @@ html#ecwid_html body#ecwid_body .horizontal-menu-container {
     background-color: #fff;
   }
 }
+
+body.index #ed-1064010907 {
+  min-height: 100vh;
+  position: relative;
+}
+
+body.index #ed-1064010907 > header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.index #ed-1064010925 {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.index #ed-1064010925 > .inner {
+  width: 100%;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 4rem;
+  text-align: center;
+}
+
+body.index #ed-1064010925 .ed-element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body.index #ed-1064010925 .ed-element.ed-headline h1,
+body.index #ed-1064010925 .ed-element.ed-headline h4,
+body.index #ed-1064010925 .ed-element.ed-headline span {
+  width: 100%;
+  text-align: center;
+}
+
+body.index #ed-1064011036 .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.index #ed-1064010907 .background,
+body.index #ed-1064010907 .background .ed-video,
+body.index #ed-1064010907 .background video {
+  height: 100%;
+  width: 100%;
+}
+
+body.index #ed-1064010907 .background video {
+  object-fit: cover;
+}
 @media screen and (max-width: 60.9375rem) {
   .ed-element.preset-menu-v2-hdecor .ed-menu {
     background: #1b1f4f;
