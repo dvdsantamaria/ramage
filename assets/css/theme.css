@@ -8480,6 +8480,37 @@ body.open-menu
   align-content: stretch;
   align-items: stretch;
 }
+
+.partners-grid-section {
+  background: #f7f7f7;
+}
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.partners-grid .partner-logo {
+  margin: 0;
+  flex: 0 1 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partners-grid .partner-logo img {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+@media screen and (max-width: 47.9375rem) {
+  .partners-grid {
+    gap: 1.25rem;
+  }
+  .partners-grid .partner-logo {
+    flex: 1 1 260px;
+  }
+}
 @media screen and (max-width: 35.9375rem) {
   .ed-element.preset-footer-frigg-v2-hdecor .footer-frigg-content > .inner {
     margin: calc((2rem / 2) * -1);
