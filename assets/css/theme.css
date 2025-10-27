@@ -8489,10 +8489,11 @@ body.open-menu
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
+  width: 100%;
 }
 .partners-grid .partner-logo {
   margin: 0;
-  flex: 0 1 180px;
+  flex: 0 1 200px;
   display: flex;
   align-items: center;
   justify-content: center;
