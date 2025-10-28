@@ -8483,23 +8483,24 @@ body.open-menu
 
 .partners-grid-section {
   background: #f7f7f7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .partners-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0;
   width: 100%;
 }
 .partners-grid .partner-logo {
   margin: 0;
-  flex: 0 1 200px;
+  flex: 0 1 240px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .partners-grid .partner-logo img {
-  max-width: 160px;
+  max-width: 200px;
   width: 100%;
   height: auto;
   object-fit: contain;
