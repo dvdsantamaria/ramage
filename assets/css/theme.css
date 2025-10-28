@@ -10617,6 +10617,22 @@ body.open-menu
     flex-basis: 100%;
   }
 }
+
+@media screen and (max-width: 60.9375rem) {
+  .ed-element.preset-text-image-overlap-default > .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ed-element.preset-text-image-overlap-default .offset-box:first-child {
+    margin-right: 0;
+  }
+
+  .ed-element.preset-text-image-overlap-default .text-image-overlap-image {
+    order: -1;
+  }
+}
 @media screen and (min-width: 60.9375rem) {
   body:not(.edit) .ed-element.preset-text-image-overlap-default .hide-lg {
     display: none;
