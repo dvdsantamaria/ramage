@@ -8957,10 +8957,6 @@ body.open-menu
   text-decoration: underline;
 }
 
-.blog-entry-body h1 {
-  font-size: 1.5rem;
-}
-
 @media screen and (max-width: 60rem) {
   .single-blog-intro__inner {
     grid-template-columns: 1fr;
