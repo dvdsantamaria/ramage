@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const target = container.querySelector(".blog-entry-body");
   if (!slug || !target) return;
 
-  const url = new URL(`./blog/${slug}.md`, document.baseURI).href;
+  const rootAttr = container.getAttribute("data-blog-root") || ".";
+  const normalizedRoot =
+    rootAttr === "." ? "" : rootAttr.endsWith("/") ? rootAttr : `${rootAttr}/`;
+  const url = new URL(`${normalizedRoot}${slug}.md`, document.baseURI).href;
 
   loadMarkdown(url)
     .then((markdown) => {
