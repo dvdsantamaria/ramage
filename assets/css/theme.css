@@ -7537,6 +7537,14 @@ body:not(.index) #ed-1064010910 {
   font-size: 0.98rem;
 }
 
+.expert-card-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #45b978;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 @media screen and (max-width: 75rem) {
   .team-highlight__grid {
     gap: 1.5rem;
