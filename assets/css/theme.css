@@ -8504,6 +8504,61 @@ body.open-menu
   height: auto;
   object-fit: contain;
 }
+#ed-1064011057 > .inner {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+@media screen and (max-width: 60rem) {
+  #ed-1064011057 > .inner {
+    grid-template-columns: 1fr;
+  }
+}
+#ed-1064011057 .service-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 100%;
+  background: transparent;
+  box-shadow: none;
+}
+#ed-1064011057 .service-card > .background {
+  width: 100%;
+  min-height: 220px;
+  flex: 1 0 auto;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+}
+#ed-1064011057 .service-card > .background .background-image-holder {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+#ed-1064011057 .service-card > .inner {
+  width: 100%;
+  background: #f1f2f4 !important;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 auto;
+  border-radius: 0 0 24px 24px;
+}
+#ed-1064011057 .service-card .ed-headline,
+#ed-1064011057 .service-card .ed-text {
+  text-align: left !important;
+}
+#ed-1064011057 .service-card .ed-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+#ed-1064011057 .service-card .ed-button .button {
+  margin: 0;
+}
 @media screen and (max-width: 47.9375rem) {
   .partners-grid {
     gap: 1.25rem;
