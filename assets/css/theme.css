@@ -10929,6 +10929,29 @@ body.open-menu
   }
 }
 
+body.page-18750082 .ed-element.preset-text-image-overlap-default .text-image-overlap-box {
+  border-radius: 24px;
+}
+
+body.page-18750082 .ed-element.preset-text-image-overlap-default .text-image-overlap-image {
+  border-radius: 24px;
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(circle, #000 98%, rgba(0,0,0,0.4) 100%);
+  mask-image: radial-gradient(circle, #000 98%, rgba(0,0,0,0.4) 100%);
+}
+
+body.page-18750082
+  .ed-element.preset-text-image-overlap-default
+  .text-image-overlap-image
+  img {
+  border-radius: 24px;
+}
+
+body.page-18750082 .ed-element.preset-text-image-overlap-default > .inner {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 60.9375rem) {
   .ed-element.preset-text-image-overlap-default > .inner {
     display: flex;
