@@ -7639,8 +7639,9 @@ body.index #ed-1064010925 .ed-element {
 
 .banner-content.animation-initial {
   min-height: clamp(360px, 70vh, 520px);
-  align-content: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-content.animation-initial > .inner {
