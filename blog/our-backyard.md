@@ -38,5 +38,3 @@ What began as a long-standing local cleaning and gardening business is now a ful
 We’re proud to continue a Northern Beaches success story and to keep raising the standard of strata care across Sydney’s north.
 
 **Property care, exceptionally well done. If we say so ourselves!**
-
----

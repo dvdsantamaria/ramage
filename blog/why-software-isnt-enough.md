@@ -1,7 +1,37 @@
-# Why Software Isn't Enough
+# Your dashboard marks jobs complete, but are they?
 
-Dashboards mark jobs complete, but the real question is whether the work was actually finished. Software captures data points, not the dust left on light fittings or the weeds near the letterboxes. Without eyes on site, you are trusting numbers instead of outcomes.
+Hitting deadlines is great, but having eyes on site is far more anxiety-reducing.  
+Learn how to protect your reputation and stay truly compliant.
 
-Our teams close the loop with photo-backed reporting. Every checklist item includes visual proof so committees and managers can verify standards without leaving their desks. It is a quick habit that keeps services accountable and removes guesswork from monthly reports.
+---
 
-In this article we look at the gaps that digital-only solutions leave behind, how blended field and software workflows solve them, and the simple steps that deliver more confidence for your buildings.
+# The limits of software
+
+With a gazillion sites on their books, strata managers depend on software to stay organised.  
+Software like Strata Master, Urbanise, and SMATA are all excellent tools for tracking jobs and due dates.  
+But can software walk through a site?  
+Is it on the ground at regular intervals, noticing the small issues before they escalate?  
+We think not!
+
+A system might show a list of completed tasks, but without eyes on the ground, does a strata manager know with certainty whether a light was replaced or an extinguisher was tagged correctly?  
+Over time, that small disconnect creates big compliance risks.
+
+---
+
+# Data vs reality
+
+Software is essential, no doubt, but the moment data and reality drift apart, strata managers are left exposed during inspections, insurance renewals, and AFSS reviews.
+
+Physical verification absolutely matters.  
+A simple site visit or photo report closes the loop between what the system records and what is actually true.
+
+---
+
+# Our approach
+
+Our strata support services do not replace your existing platforms; they complement them.  
+We’re on site at consistent times, capturing images, logging issues, and making sure every certificate and report is ready before the deadline.
+
+Our teams ensure that what you see on screen matches what is happening at every building you manage.
+
+---
