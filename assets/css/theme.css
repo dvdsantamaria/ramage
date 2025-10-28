@@ -8485,6 +8485,9 @@ body.open-menu
   background: #f7f7f7;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
+.site-header.sticky {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
 .partners-grid {
   display: flex;
   flex-wrap: wrap;
@@ -13946,3 +13949,4 @@ body.edit
 .ed-element.preset-advanced-default .advanced-partners p {
   text-align: center;
 }
+
