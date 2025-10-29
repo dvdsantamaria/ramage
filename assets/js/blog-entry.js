@@ -17,8 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
   excerptEls.forEach((el) => (el.textContent = ""));
 
   const rootAttr = container.getAttribute("data-blog-root") || ".";
-  const normalizedRoot =
-    rootAttr === "." ? "" : rootAttr.endsWith("/") ? rootAttr : `${rootAttr}/`;
+  const normalizedRoot = normalizeRelativeRoot(rootAttr);
+  const assetRootAttr = container.getAttribute("data-blog-asset-root") || "";
+  const assetRoot = normalizeAssetRoot(assetRootAttr);
+  const heroImageTargets = Array.from(
+    container
+      .closest(".single-blog-intro__inner")
+      ?.querySelectorAll("[data-blog-hero-image]") || [],
+  );
 
   const markdownUrl = new URL(
     `${normalizedRoot}${slug}.md`,
@@ -72,6 +78,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       if (currentEntry.excerpt) {
         applyExcerpt(currentEntry.excerpt);
+      }
+      if (currentEntry.image && heroImageTargets.length) {
+        const resolvedImage = resolveAssetPath(currentEntry.image, assetRoot);
+        if (resolvedImage) {
+          heroImageTargets.forEach((img) => {
+            if (img.getAttribute("src") !== resolvedImage) {
+              img.src = resolvedImage;
+            }
+          });
+        }
       }
 
       if (prevLink && orderedEntries.length > 1) {
@@ -137,6 +153,38 @@ document.addEventListener("DOMContentLoaded", () => {
         "<p>We are preparing this article. Please check back soon.</p>";
     });
 });
+
+function normalizeRelativeRoot(value) {
+  if (!value || value === ".") return "";
+  return value.endsWith("/") ? value : `${value}/`;
+}
+
+function normalizeAssetRoot(value) {
+  if (!value || value === ".") return "";
+  if (value === "./") return "./";
+  return value.endsWith("/") ? value : `${value}/`;
+}
+
+function resolveAssetPath(path, assetRoot) {
+  if (!path) return "";
+  if (/^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith("data:")) {
+    return path;
+  }
+
+  if (assetRoot) {
+    if (path.startsWith("./")) {
+      return assetRoot + path.replace(/^\.\//, "");
+    }
+
+    if (path.startsWith("../")) {
+      return path;
+    }
+
+    return assetRoot + path;
+  }
+
+  return path.startsWith("./") ? path.replace(/^\.\//, "") : path;
+}
 
 function renderMarkdown(markdown) {
   const text = markdown.replace(/\r\n/g, "\n").trim();
