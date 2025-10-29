@@ -1,5 +1,3 @@
-Big changes are coming to NSW strata law. New rules for managers, owners, and committees are about to apply, so here’s what’s changing and why it matters. Get ahead before changes kick in.
-
 Strata laws in NSW are shifting big time.
 
 For strata managers, committees, and building owners, we won’t lie, it’s going to get tough. It means more enforcement and bigger expectations all round.

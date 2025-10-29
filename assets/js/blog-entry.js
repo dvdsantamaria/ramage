@@ -165,7 +165,8 @@ function renderMarkdown(markdown) {
         return `<ul>${items}</ul>`;
       }
 
-      return `<p>${escapeHtml(trimmed)}</p>`;
+      const escaped = escapeHtml(trimmed).replace(/\n/g, "<br />");
+      return `<p>${escaped}</p>`;
     })
     .join("\n");
 }
