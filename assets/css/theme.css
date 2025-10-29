@@ -7262,7 +7262,7 @@ html#ecwid_html body#ecwid_body .horizontal-menu-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.9rem;
+    gap: 1.4rem;
   }
 
   body.index #ed-1064011321 .menu-level-0 > li:not(:last-child),
