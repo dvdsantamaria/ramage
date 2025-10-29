@@ -2,31 +2,37 @@
   {
     "slug": "our-backyard",
     "title": "Our Backyard",
-    "excerpt": "Ramage Property Services has a 15-year legacy on Sydney's Northern Beaches. Read how we're carrying that forward with modern systems and the same trusted values."
+    "excerpt": "Ramage Property Services has a 15-year legacy on Sydney's Northern Beaches. Read how we're carrying that forward with modern systems and the same trusted values.",
+    "id": 0
   },
   {
     "slug": "why-software-isnt-enough",
     "title": "Why Software Isn't Enough",
-    "excerpt": "Your dashboard marks jobs complete, but are they? Software tracks data, not reality. Learn why on-site verification matters more than ticking digital boxes."
+    "excerpt": "Your dashboard marks jobs complete, but are they? Software tracks data, not reality. Learn why on-site verification matters more than ticking digital boxes.",
+    "id": 1
   },
   {
     "slug": "strata-compliance-checklist-101",
     "title": "Strata Compliance Checklist (101)",
-    "excerpt": "Strata compliance can feel overwhelming, but it doesn't have to. Here's a simple, step-by-step checklist to stay on top of AFSS renewals and avoid last-minute panic."
+    "excerpt": "Strata compliance can feel overwhelming, but it doesn't have to. Here's a simple, step-by-step checklist to stay on top of AFSS renewals and avoid last-minute panic.",
+    "id": 2
   },
   {
     "slug": "cleaner-caretaker-or-support",
     "title": "Cleaner, Caretaker, or Support?",
-    "excerpt": "Not every building needs a full-time manager, but every strata manager needs more support. Here's how to decide which level of help fits your building best."
+    "excerpt": "Not every building needs a full-time manager, but every strata manager needs more support. Here's how to decide which level of help fits your building best.",
+    "id": 3
   },
   {
     "slug": "nsw-strata-reforms-2025-26",
     "title": "NSW Strata Reforms 2025-26",
-    "excerpt": "Big changes are coming to NSW strata law. Learn what's changing, why it matters, and how strata managers can prepare before the new regulations take effect."
+    "excerpt": "Big changes are coming to NSW strata law. Learn what's changing, why it matters, and how strata managers can prepare before the new regulations take effect.",
+    "id": 4
   },
   {
     "slug": "photo-reporting-power",
     "title": "Photo Reporting Power",
-    "excerpt": "If couriers take photos for proof of delivery, why shouldn't strata services do the same? Discover how photo-based reports build trust and simplify audits."
+    "excerpt": "If couriers take photos for proof of delivery, why shouldn't strata services do the same? Discover how photo-based reports build trust and simplify audits.",
+    "id": 5
   }
 ]
