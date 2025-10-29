@@ -2,9 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector("[data-blog-entry]");
   if (!container) return;
 
-  const slug = container.getAttribute("data-blog-entry");
-  const target = container.querySelector(".blog-entry-body");
-  if (!slug || !target) return;
+ const slug = container.getAttribute("data-blog-entry");
+ const target = container.querySelector(".blog-entry-body");
+ if (!slug || !target) return;
+
+  const titleElm = container.querySelector("[data-blog-title]");
+  const excerptElm = container.querySelector("[data-blog-excerpt]");
+  if (titleElm) titleElm.textContent = "";
+  if (excerptElm) excerptElm.textContent = "";
 
   const rootAttr = container.getAttribute("data-blog-root") || ".";
   const normalizedRoot =
@@ -14,6 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
   loadMarkdown(url)
     .then((markdown) => {
       target.innerHTML = renderMarkdown(markdown);
+      if (titleElm || excerptElm) {
+        const firstHeading = target.querySelector("h1, h2");
+        const firstParagraph = target.querySelector("p");
+        if (titleElm && firstHeading) {
+          titleElm.textContent = firstHeading.textContent;
+          firstHeading.remove();
+        }
+        if (excerptElm && firstParagraph) {
+          excerptElm.textContent = firstParagraph.textContent;
+          firstParagraph.remove();
+        }
+      }
     })
     .catch((error) => {
       console.error(error);
