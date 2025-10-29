@@ -1,5 +1,3 @@
-## NSW Strata Reforms 2025–26
-
 Big changes are coming to NSW strata law. New rules for managers, owners, and committees are about to apply, so here’s what’s changing and why it matters. Get ahead before changes kick in.
 
 Strata laws in NSW are shifting big time.

@@ -1,5 +1,3 @@
-## Cleaner, Caretaker, or Support?
-
 Hiring a caretaker is a decision made by the strata scheme's owners' corporation, and in the majority of cases in NSW, committees simply do not have the funds for such a luxury.
 
 Then there are cleaning contracts that cover basic surface cleaning, vacuuming, and mopping (and let’s be honest, in a lot of cases, “basic” is being kind).
