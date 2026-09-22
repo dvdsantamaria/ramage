@@ -7448,10 +7448,6 @@ body.index #ed-1064010925 > .inner {
   margin-bottom: 1rem;
 }
 
-#ed-journey-copy p:first-of-type {
-  font-style: normal;
-}
-
 @media screen and (max-width: 47.9375rem) {
   .journey-figure {
     float: none;
