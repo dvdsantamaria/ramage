@@ -9314,8 +9314,19 @@ body.open-menu
     order: -1;
   }
 
+  .contact-essentials__stack,
+  .contact-essentials__image,
+  .contact-card,
+  .contact-card__body {
+    min-width: 0;
+  }
+
   .contact-card {
     flex-direction: row;
+  }
+
+  .contact-card__body a {
+    overflow-wrap: anywhere;
   }
 }
 .expert-card-bottom {
@@ -11240,6 +11251,23 @@ body.page-18750082 .ed-element.preset-text-image-overlap-default .text-image-ove
   overflow: hidden;
   -webkit-mask-image: radial-gradient(circle, #000 98%, rgba(0,0,0,0.4) 100%);
   mask-image: radial-gradient(circle, #000 98%, rgba(0,0,0,0.4) 100%);
+}
+
+body.page-18750082 #ed-1064012392 h1 {
+  font-size: 52px;
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 60.9375rem) {
+  body.page-18750082 #ed-1064012392 h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 35.9375rem) {
+  body.page-18750082 #ed-1064012392 h1 {
+    font-size: 34px;
+  }
 }
 
 body.page-18750082

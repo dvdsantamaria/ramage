@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ramageservices.com.au/sitemap.xml
