@@ -1,4 +1,4 @@
-# Seeing Is Believing: Why Strata Needs Photo-Based Proof
+# Seeing is believing: why strata needs photo-based proof
 
 How often do you see a postie or courier take a photo of a parcel for delivery proof? So why aren’t strata services providing the same level of transparency?
 

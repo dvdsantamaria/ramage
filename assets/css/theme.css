@@ -7586,6 +7586,11 @@ body:not(.index) #ed-1064010910 {
   margin-bottom: 1.5rem;
 }
 
+.service-coverage__intro {
+  margin: 0 0 1.5rem;
+  line-height: 1.55;
+}
+
 .service-coverage__list {
   display: grid;
   gap: 1.5rem;
@@ -7601,6 +7606,25 @@ body:not(.index) #ed-1064010910 {
   margin: 0;
   color: rgba(27, 31, 79, 0.8);
   line-height: 1.55;
+}
+
+.service-coverage__item .service-coverage__suburbs {
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+}
+
+.secondary-cta-banner .secondary-cta-contact-links {
+  text-align: center;
+}
+
+.secondary-cta-banner .secondary-cta-contact-links p {
+  margin: 0;
+}
+
+.secondary-cta-banner .secondary-cta-contact-links a {
+  color: #1b1f4f;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .service-coverage__image {
