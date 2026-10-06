@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const target = container.querySelector(".blog-entry-body");
   if (!slug || !target) return;
 
+  const cta = document.createElement("aside");
+  cta.className = "blog-entry-cta";
+  cta.innerHTML = `
+    <h2>Need help with your strata property?</h2>
+    <p>Talk to Ramage Property Services about cleaning, garden maintenance and high-pressure washing. Explore our <a href="../services.html">strata services</a> and <a href="../service-areas.html">service areas</a>.</p>
+    <a class="blog-entry-cta__link" href="../contact.html">Contact Ramage Property Services</a>
+  `;
+  target.insertAdjacentElement("afterend", cta);
+
   const titleEls = Array.from(container.querySelectorAll("[data-blog-title]"));
   const excerptEls = Array.from(
     container.querySelectorAll("[data-blog-excerpt]"),
@@ -131,13 +140,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const firstHeading = target.querySelector("h1, h2");
       const firstParagraph = target.querySelector("p");
 
-      if (!titlePopulated && firstHeading) {
-        applyTitle(firstHeading.textContent.trim());
+      if (firstHeading) {
+        if (!titlePopulated) applyTitle(firstHeading.textContent.trim());
         firstHeading.remove();
       }
 
-      if (!excerptPopulated && firstParagraph) {
-        applyExcerpt(firstParagraph.textContent.trim());
+      if (firstParagraph) {
+        if (!excerptPopulated) applyExcerpt(firstParagraph.textContent.trim());
         firstParagraph.remove();
       }
     })
@@ -198,7 +207,7 @@ function renderMarkdown(markdown) {
 
       if (/^#{1,6}\s/.test(trimmed)) {
         const [, hashes, content] = trimmed.match(/^(#{1,6})\s+(.*)$/);
-        const level = Math.min(hashes.length, 6);
+        const level = Math.min(hashes.length + 1, 6);
         return `<h${level}>${escapeHtml(content)}</h${level}>`;
       }
 

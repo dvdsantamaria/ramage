@@ -1,4 +1,4 @@
-We’ve taken on a business with 15 years of history.
+We’ve taken on a business with a long history in strata property care.
 
 From Mosman to Mona Vale, this is our home turf.
 
@@ -8,7 +8,7 @@ Read how Ramage Property Services was born in God’s Country.
 
 ---
 
-Ramage Property Services is a new name, but the business behind it has been trusted on the Northern Beaches and North Shore for more than 15 years.
+Ramage Property Services is a new name, but the business behind it has long been trusted on the Northern Beaches and North Shore.
 
 When we took over, we inherited wonderful long-term clients, experienced staff, and a reputation for friendliness and reliability.  
 Our goal was simple: to modernise the systems, expand the services, and keep the same values that earned that trust.
