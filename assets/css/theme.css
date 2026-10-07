@@ -7541,8 +7541,8 @@ body:not(.index) #ed-1064010910 {
   font-size: 0.95rem;
   font-weight: 600;
   color: #45b978;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 75rem) {
@@ -7597,9 +7597,17 @@ body:not(.index) #ed-1064010910 {
 }
 
 .service-coverage__item h4 {
-  margin: 0 0 0.4rem 0;
-  font-size: 1.1rem;
+  margin: 0 0 0.65rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
   color: #1b1f4f;
+}
+
+.service-coverage__region-detail {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .service-coverage__item p {
@@ -7609,8 +7617,9 @@ body:not(.index) #ed-1064010910 {
 }
 
 .service-coverage__item .service-coverage__suburbs {
-  margin-bottom: 0.45rem;
-  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .secondary-cta-banner .secondary-cta-contact-links {
@@ -9057,8 +9066,8 @@ body.open-menu
 .single-blog-intro__link {
   font-size: 0.95rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0;
   color: #45b978;
   text-decoration: none;
 }
@@ -9714,6 +9723,11 @@ body.open-menu
 }
 .ed-element.preset-footer-frigg-v2-hdecor .footer-fz {
   font-size: 16px;
+}
+.footer-contact-details {
+  display: block;
+  margin-top: 0.35rem;
+  font-weight: 600;
 }
 .ed-element.preset-footer-frigg-v2-hdecor .ed-menu ul li {
   padding: 0 0 0.5rem 0 !important;
