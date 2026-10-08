@@ -14881,7 +14881,8 @@ body.edit
   font-size: 0.75rem;
   line-height: 1.35;
   font-weight: 400;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 .footer-contact-details {
   display: block;
@@ -14924,6 +14925,8 @@ body.edit
     grid-column: 1 / -1;
     flex-basis: auto;
     margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(27, 31, 79, 0.18);
   }
   .ed-element.preset-footer-frigg-v2-hdecor .footer-frigg-box-shrink {
     min-width: 0;
@@ -14976,5 +14979,50 @@ body.edit
 @media screen and (max-width: 21.25rem) {
   .footer-copyright p {
     font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 35.9375rem) {
+  .keep-together {
+    white-space: nowrap;
+  }
+
+  .secondary-cta-banner h2 {
+    max-width: 24ch;
+    margin-inline: auto;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .secondary-cta-break {
+    display: none;
+  }
+
+  .mobile-hidden-break {
+    display: none;
+  }
+
+  .bundle-summary {
+    padding: 10px 16px 24px !important;
+  }
+
+  .bundle-summary p {
+    max-width: 38rem;
+    margin: 0 auto;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+  }
+
+  #ed-1064011315 {
+    margin-bottom: 24px;
+  }
+
+  #ed-1064012395 h4 {
+    max-width: 30ch;
+    margin-inline: auto;
+    line-height: 1.45;
+    text-wrap: balance;
   }
 }
